@@ -12,9 +12,9 @@ Mesma estrutura, mesmos tokens, só a luz muda.
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-2f6b48?logo=typescript&logoColor=white)
 ![Tema](https://img.shields.io/badge/tema-Dia%20%26%20Noite-8b5e3c)
 
-<img src="docs/media/gonature-2.0-web.gif" alt="Tour pelo GoNature 2.0 na web: feed, busca, mapa, chat, perfil e troca de tema Dia/Noite" width="100%">
+<img src="../REDESIGN/media/gonature-2.0-web.gif" alt="Tour pelo GoNature 2.0 na web: feed, busca, mapa, chat, perfil e troca de tema Dia/Noite" width="100%">
 
-▶️ **Vídeos em alta qualidade:** [Web (MP4, 45 s)](docs/media/gonature-2.0-web.mp4) · [Mobile — protótipo (MP4, 50 s)](docs/media/gonature-2.0-mobile.mp4)
+▶️ **Vídeos em alta qualidade:** [Web (MP4, 45 s)](../REDESIGN/media/gonature-2.0-web.mp4) · [Mobile — protótipo (MP4, 50 s)](../REDESIGN/media/gonature-2.0-mobile.mp4)
 
 </div>
 
@@ -39,15 +39,15 @@ Mesma estrutura, mesmos tokens, só a luz muda.
 
 | Dia | Noite |
 |:---:|:---:|
-| <img src="docs/media/feed-light.jpg" alt="Feed no tema Dia"> | <img src="docs/media/feed-dark.jpg" alt="Feed no tema Noite"> |
+| <img src="../REDESIGN/media/feed-light.jpg" alt="Feed no tema Dia"> | <img src="../REDESIGN/media/feed-dark.jpg" alt="Feed no tema Noite"> |
 | **Feed** — filtros por tipo e sugestões de quem seguir | |
-| <img src="docs/media/map-light.jpg" alt="Mapa no tema Dia"> | <img src="docs/media/map-dark.jpg" alt="Mapa no tema Noite"> |
+| <img src="../REDESIGN/media/map-light.jpg" alt="Mapa no tema Dia"> | <img src="../REDESIGN/media/map-dark.jpg" alt="Mapa no tema Noite"> |
 | **Mapa** — painel "Perto de você" e trilha selecionada | |
-| <img src="docs/media/chat-light.jpg" alt="Chat no tema Dia"> | <img src="docs/media/chat-dark.jpg" alt="Chat no tema Noite"> |
+| <img src="../REDESIGN/media/chat-light.jpg" alt="Chat no tema Dia"> | <img src="../REDESIGN/media/chat-dark.jpg" alt="Chat no tema Noite"> |
 | **Chat** — conversas diretas e grupos | |
-| <img src="docs/media/profile-light.jpg" alt="Perfil no tema Dia"> | <img src="docs/media/profile-dark.jpg" alt="Perfil no tema Noite"> |
+| <img src="../REDESIGN/media/profile-light.jpg" alt="Perfil no tema Dia"> | <img src="../REDESIGN/media/profile-dark.jpg" alt="Perfil no tema Noite"> |
 | **Perfil** — números, pedidos para seguir e catálogos | |
-| <img src="docs/media/settings-light.jpg" alt="Configurações no tema Dia"> | <img src="docs/media/settings-dark.jpg" alt="Configurações no tema Noite"> |
+| <img src="../REDESIGN/media/settings-light.jpg" alt="Configurações no tema Dia"> | <img src="../REDESIGN/media/settings-dark.jpg" alt="Configurações no tema Noite"> |
 | **Configurações** — sol/lua, seguir o sistema, fundo do chat e privacidade | |
 
 ---
@@ -58,12 +58,12 @@ Mesma estrutura, mesmos tokens, só a luz muda.
 > ([gonature-mobile](https://github.com/alissonkl20/gonature-mobile)) é a próxima etapa.
 
 <div align="center">
-<img src="docs/media/gonature-2.0-mobile.gif" alt="Protótipo mobile do GoNature 2.0 nos temas Dia e Noite" width="640">
+<img src="../REDESIGN/media/gonature-2.0-mobile.gif" alt="Protótipo mobile do GoNature 2.0 nos temas Dia e Noite" width="640">
 </div>
 
 | Feed | Nova aventura | Configurações |
 |:---:|:---:|:---:|
-| <img src="docs/media/mobile-feed.jpg" alt="Feed mobile, Dia e Noite"> | <img src="docs/media/mobile-create.jpg" alt="Formulário de nova aventura no mobile"> | <img src="docs/media/mobile-settings.jpg" alt="Configurações no mobile"> |
+| <img src="../REDESIGN/media/mobile-feed.jpg" alt="Feed mobile, Dia e Noite"> | <img src="../REDESIGN/media/mobile-create.jpg" alt="Formulário de nova aventura no mobile"> | <img src="../REDESIGN/media/mobile-settings.jpg" alt="Configurações no mobile"> |
 
 No mobile: o **sol/lua** fica no topo do feed, o botão **+** da barra inferior abre uma gaveta para escolher Trilha, Corrida ou Camping, e a barra de abas abre o nome da aba ativa com animação.
 
@@ -130,4 +130,4 @@ Produção: Vercel, com `VITE_API_BASE=https://api.alissonkisp.tech`.
 - Views finas, lógica em `src/composables/`, componentes em `src/components/<feature>/`.
 - Tema Dia/Noite: `useThemeStore` + `useThemeToggle` (salvo nas configurações do perfil).
 
-> As capturas e vídeos de `docs/media/` foram gravados com dados de exemplo.
+> As capturas e vídeos de `../REDESIGN/media/` foram gravados com dados de exemplo.
