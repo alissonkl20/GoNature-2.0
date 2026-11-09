@@ -17,9 +17,6 @@ Mesma estrutura, mesmos tokens, só a luz muda.
 ▶️ **Vídeos em alta qualidade:**
 [🌐 Web (MP4, 45 s)](./media/gonature-2.0-web.mp4) · [📱 Mobile — protótipo (MP4, 50 s)](./media/gonature-2.0-mobile.mp4)
 
-> 💡 Os links acima abrem o vídeo em uma nova aba, com player nativo do navegador.
-> Para player embutido no README, veja [como usar user-attachments](#-vídeo-inline-opcional).
-
 </div>
 
 ---
@@ -112,43 +109,6 @@ No mobile: o **sol/lua** fica no topo do feed, o botão **+** da barra inferior 
 |------|--------|
 | [gonature-backend](https://github.com/alissonkl20/gonature-backend) | Django |
 | [gonature](https://github.com/alissonkl20/gonature) | SDK Python |
-| **gonature-web** (este) | Vue 3 |
+| [gonature-web](https://github.com/alissonkl20/gonature-web) | Vue 3 |
 | [gonature-mobile](https://github.com/alissonkl20/gonature-mobile) | React Native |
 
-O cliente HTTP TypeScript (`@gonature/api`) fica em `packages/api/` neste repo.
-
-## 🚀 Setup
-
-```bash
-cp .env.example .env
-npm install
-npm run dev
-```
-
-Backend: `http://127.0.0.1:8000` (repo **gonature-backend**).
-Produção: Vercel, com `VITE_API_BASE=https://api.alissonkisp.tech`.
-
-### Estrutura do front
-
-- Tema e CSS global em `src/assets/styles/` (sem `<style>` nos `.vue`).
-- Views finas, lógica em `src/composables/`, componentes em `src/components/<feature>/`.
-- Tema Dia/Noite: `useThemeStore` + `useThemeToggle` (salvo nas configurações do perfil).
-
-> As capturas e vídeos de `./media/` foram gravados com dados de exemplo.
-
----
-
-## 🎬 Vídeo inline (opcional)
-
-O GitHub **não reproduz arquivos `.mp4` hospedados no repositório** dentro do README (o sanitizador remove a tag `<video>`). Para ter um player embutido, o vídeo precisa ser anexado ao GitHub antes:
-
-1. Abra uma **issue** no repositório (pode ser uma issue "temp" que você fecha depois).
-2. **Arraste** o `.mp4` para o campo de texto e espere o upload terminar.
-3. O GitHub gera uma URL do tipo `https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.
-4. Cole o bloco abaixo no lugar do link `▶️ Vídeos em alta qualidade:` lá em cima, trocando `COLE-A-URL-AQUI` pela URL gerada:
-
-```html
-<video src="COLE-A-URL-AQUI" controls width="100%"></video>
-```
-
-> ⚠️ Limite de **10 MB** por arquivo em contas gratuitas. Se seus MP4s passarem disso, mantenha os **links diretos** (funcionam bem: abrem em nova aba com player nativo) ou comprima com `ffmpeg -i in.mp4 -vcodec libx264 -crf 28 out.mp4`.
